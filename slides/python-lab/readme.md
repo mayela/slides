@@ -10,6 +10,7 @@ class: left
 - Tipos de datos
 - Operadores aritméticos
 - Operadores lógicos
+- Operadores de comparación
 - Estructuras de datos
 - Estructuras de control
   - Condicionales
@@ -47,6 +48,14 @@ la resta, multiplicación y división.
 # Operadores lógicos
 
 En Python tenemos disponibles **and, or y not**
+
+# Operadores de comparación
+
+| Operador | Descripción |
+| -- | -- |
+| == | Checa si los dos operandos son iguales|
+| != | Checa si los dos operandos no son iguales|
+| > | Checa que el operando de la izquierda sea mayor que el de la derecha|
 
 ---
 
@@ -97,3 +106,50 @@ fulanito = {"nombre": "Fulanito", "apellido": "de Tal", "color_favorito": "naran
 
 # Estructuras de control
 
+## Condicionales
+
+En Python contamos con la estructa *if...else* que nos permite crear condiciones
+
+```python
+a = 5
+b = 3
+if a > b:
+    print("a es mayor que b")
+else:
+    print("a es igual o menor que b")
+```
+---
+
+## Ciclicas
+
+En Python contamos con dos estrucuturas para realizar ciclos: *while y for*
+
+```python
+contador = 0
+while (contador < 10):
+   print(f'El contador es: {contador}')
+   contador = contador + 1
+
+for i in range(0, 10):
+    print(f'El contador es: {i}')
+```
+
+---
+
+# Funciones
+
+Python nos ofrece la palabra reservada *def* para definir funciones.
+
+```python
+def cuadrado(numero):
+    return numero ** 2
+```
+
+## Funciones lambda
+
+En Python también contamos con funciones anónimas, están se definen con la sentencia 
+*lambda*.
+
+```python
+cuadrado = lambda numero: numero ** 2
+```
